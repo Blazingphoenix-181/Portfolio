@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sagnik - Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <div class="left"> MY PORTFOLIO</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="Resume.pdf">Resume</a></li>
+      <li><a onclick="openModal()">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="firstSection" data-aos="fade-up">
+    <div class="leftSection">
+      Hi, I am <span class="purple">Sagnik</span>
+      <div>I am a passionate <span id="element"></span></div>
+      <div class="buttons">
+        <button class="btn" onclick="window.open('Resume.pdf')">Download Resume</button>
+        <button class="btn" onclick="window.open('https://github.com/Blazingphoenix-181')">GitHub</button>
+        <button class="btn" onclick="window.open('https://linkedin.com/in/sagnik-chatterjee-374a5b345')">LinkedIn</button>
+      </div>
+    </div>
+    <div class="rightSect">
+      <img src="IMG_20250214_201227_392.webp" alt="Profile Image" />
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="SecondSection" data-aos="fade-up">
+    <h1>Work Experience</h1>
+    <div class="box">
+      <div class="vertical"><img src="html.png" /><div class="vertical_text">HTML Developer</div><div class="vertical_desc">Semantic and responsive UI building.</div></div>
+      <div class="vertical"><img src="css.png" /><div class="vertical_text">CSS Developer</div><div class="vertical_desc">Pro in Grid, Flexbox, and UI theming.</div></div>
+      <div class="vertical"><img src="js" /><div class="vertical_text">JS Developer</div><div class="vertical_desc">Dynamic websites with modern JS/ES6.</div></div>
+      <div class="vertical"><img src="python.png" /><div class="vertical_text">Python Dev</div><div class="vertical_desc">Worked on automation, ML,Deep learning,Cybersecurity and Flask apps.</div></div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="projects" id="projects" data-aos="fade-up">
+    <h1>Highlighted Projects</h1>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Smart Study Planner</h3>
+        <p>Planner with login, task scheduler, notifications, Excel export. Built using JS & LocalStorage.</p>
+      </div>
+      <div class="project-card">
+        <h3>Medical Decision Tree</h3>
+        <p>Flask-based AI that recommends medicine from patient data including sugar, thyroid, BP.</p>
+      </div>
+      <div class="project-card">
+        <h3>Music Player App (RAAGA)</h3>
+        <p>Responsive music player with local audio, pause/play/seek, custom UI using JS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Notes Web App</h3>
+        <p>Simple note-taking app using JS and localStorage. Supports save, edit, delete, and UI sorting.</p>
+      </div>
+      <div class="project-card">
+        <h3>Optimus – Voice AI</h3>
+        <p>VS Code-integrated Python voice assistant with speech recognition and real-time execution.</p>
+      </div>
+      <div class="project-card">
+        <h3>Neural Protocol Prediction</h3>
+        <p>Deep learning model for classifying packet flows using Kaggle/Custom Wireshark data.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="skills" data-aos="fade-up">
+    <h1>Skills</h1>
+    <div class="skill-grid">
+      <div class="skill-card"><h3>Languages</h3><p>Python, Java, C, HTML, CSS, JavaScript</p></div>
+      <div class="skill-card"><h3>Tools & Libraries</h3><p>PyTorch, Pandas, NumPy, Flask, Matplotlib, Tkinter</p></div>
+      <div class="skill-card"><h3>Domains</h3><p>IoT Security, Cybersecurity, Web Dev, Deep Learning</p></div>
+    </div>
+  </section>
+
+  <hr>
+
+  <section class="connect" data-aos="fade-up" id="about">
+    <h2>About Me</h2>
+    <p><strong>B.Tech CSE | Web Dev | Cybersecurity | IoT Enthusiast | AI and ML| Deep Learning</strong></p>
+    <p>I’m a curious and motivated technophile actively exploring the realms of deep learning and secure systems. I build web apps, work with networks, and love converting ideas into intelligent code.</p>
+    <p>Currently, I’m diving deep into IoT security and cybersecurity, focusing on building secure systems and exploring the intersection of AI and security.</p>
+  </section>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    var typed = new Typed('#element', {
+      strings: ['Web Developer.', 'IoT Security Enthusiast.', 'Tech Explorer.'],
+      typeSpeed: 50,
+      loop: true
+    });
+  </script>
+</body>
+</html>
